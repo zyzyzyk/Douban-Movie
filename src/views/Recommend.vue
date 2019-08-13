@@ -12,7 +12,7 @@
       <div class="space" style="background-color: #f6f6f6; height: 10px"></div>
       <ListBlock
       :movies="commingMovies"
-      :title="`即将上映(${playingCount})`"
+      :title="`即将上映(${commingCount})`"
       @more="goMore(0)"
       @select="selectItem"
       ></ListBlock>
@@ -28,7 +28,8 @@ export default {
     return {
       playingMovies: [],
       playingCount: 0,
-      commingMovies: []
+      commingMovies: [],
+      commingCount: 0
     }
   },
   components: {
