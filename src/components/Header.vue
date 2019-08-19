@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="user" @click="$router.push('/user')">
-      <i class="iconfont icon-user"/>
+      <i class="iconfont iconicon011"/>
     </div>
   </div>
 </template>

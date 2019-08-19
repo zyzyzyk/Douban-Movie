@@ -2,7 +2,7 @@
     <section class="list-block">
       <div class="info" @click="$emit('more')">
         <div class="title">{{title}}</div>
-        <i class="iconfont icon-right"></i>
+        <i class="iconfont iconjiantou-copy-copy"></i>
       </div>
       <div v-if="movies.length" class="list">
         <div class="item" v-for="item in movies" :key="item._id" @click="$emit('select',item._id)">
