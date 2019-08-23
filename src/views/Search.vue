@@ -100,7 +100,7 @@ export default {
     ]),
     touch(id) {
       this.$router.push(`/movie/${id}`);
-      console.log(id)
+      // console.log(id)
     },
     addQurery(a) {
       this.$refs.searchBox.setQuery(a)

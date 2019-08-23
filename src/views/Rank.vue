@@ -1,7 +1,11 @@
 <template>
   <div class="rank">
     <ScrollView>
-      <Card v-for="(item, index) in movie" :key="item._id" :movie="item" :sort="index + 1">
+      <Card 
+        v-for="(item, index) in movie" 
+        :key="item._id" :movie="item" 
+        :sort="index + 1"
+        @select="showList">
       </Card>
     </ScrollView>
     <div class="loading-wrap" v-show="!movie.length">
@@ -30,7 +34,10 @@ export default {
             this.movie = res.data.result.movies
           }
         })
-        
+    },
+    showList(id) {
+      this.$router.push(`/movie/${id}`);
+      console.log(id)
     }
   },
 }
